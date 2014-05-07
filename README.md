@@ -1,6 +1,6 @@
-prospectwatcher - Add and track Prospect stats for Hockey Fantasy leagues keeper leagues.
+Prospect Watcher
 ===============
 
-Search uses the eliteprospects API (https://github.com/menmo/eliteprospects-search-api) 
+Add Prospects to keep track of their play throughout the year. Very handy for keeper leagues with draft's.
 
-Add and keep track of prospects in one spot.
+Search uses the eliteprospects API (https://github.com/menmo/eliteprospects-search-api) 
