@@ -40,6 +40,14 @@ class DefaultController extends Controller
     }
 
     public function watchProspectAction($prospectId, $prospectName) {
+
+      $em = $this->getDoctrine()->getManager();
+      $entity = $em->getRepository('HockeyStatsBundle:Prospect')->findOneByProspectID($prospectId);
+
+      if($entity) {
+        exit("You are already watching this prospect");
+      }
+
       $entity = new Prospect();
       $entity->setProspectID($prospectId);
       $entity->setName($prospectName);
