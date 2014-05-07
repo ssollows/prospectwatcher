@@ -1,0 +1,9 @@
+<a href="{{ path('hockey_stats_homepage') }}">Home</a> > Results:<br><br>
+
+{% for prospect in results %}
+    <li>
+      <a href="http://www.eliteprospects.com/player.php?player={{prospect.id}}">{{ prospect.fullname }}</a> ({{prospect.position}} - {{prospect.age}})
+      <a href="{{ path('watch_prospect', { 'prospectId': prospect.id , 'prospectName': prospect.fullname}) }}">Watch</a>
+      <br>
+    </li>
+{% endfor %}

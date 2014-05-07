@@ -1,0 +1,17 @@
+hockey_stats_homepage:
+    pattern:  /
+    defaults: { _controller: HockeyStatsBundle:Default:index }
+
+search_prospects:
+    pattern:  /search
+    defaults: { _controller: HockeyStatsBundle:Default:searchProspects }
+    requirements:
+        _method:  GET
+
+watch_prospect:
+    pattern:   /watchProspect/{prospectId}/{prospectName}
+    defaults:  { _controller: HockeyStatsBundle:Default:watchProspect }
+
+remove_prospect:
+    pattern:   /removeProspect/{id}
+    defaults:  { _controller: HockeyStatsBundle:Default:removeProspect }

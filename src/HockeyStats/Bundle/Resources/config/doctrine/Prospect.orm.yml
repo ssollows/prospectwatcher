@@ -1,0 +1,17 @@
+HockeyStats\Bundle\Entity\Prospect:
+    type: entity
+    table: null
+    repositoryClass: HockeyStats\Bundle\Entity\ProspectRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        name:
+            type: string
+            length: 255
+        prospectID:
+            type: integer
+    lifecycleCallbacks: {  }

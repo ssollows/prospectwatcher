@@ -1,0 +1,4 @@
+hockey_stats:
+    resource: "@HockeyStatsBundle/Resources/config/routing.yml"
+    prefix:   /
+

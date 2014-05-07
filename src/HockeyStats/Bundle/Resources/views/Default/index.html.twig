@@ -1,0 +1,17 @@
+Prospects I am Watching:
+<table>
+    {% for prospect in prospects %}
+        <tr>
+            <td>
+              <a href="http://www.eliteprospects.com/player.php?player={{prospect.prospectID}}" target="_blank">{{ prospect.name }}
+              </a> - <a href="{{ path('remove_prospect', { 'id': prospect.id }) }}"> remove </a>
+            </td>
+        </tr>
+    {% endfor %}
+</table>
+
+<br>
+
+Player search:<br>
+
+{{ form(form) }}
